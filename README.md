@@ -1,4 +1,4 @@
 # factory_slider
 Frontend assignment
 
-Tested in chrome.
+Tested in Google Chrome.
