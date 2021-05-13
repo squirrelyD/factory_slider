@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.slider__track-container {
+  width: 65%;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 80% 1fr;
+  overflow: hidden;
+  position: relative;
+}
+.slider__track-container .slider__track {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.slider__track-container .slider__track:first-child {
+  grid-column: 1/3;
+}
+
+.slider__img {
+  width: auto;
+  height: auto;
+}
+.slider__img {
+  margin-left: 30px;
+}
+.slider__img img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  background-color: white;
+  right: 0;
+  bottom: 30%;
+  transform: translateY(60%);
+  padding: 7rem;
+  padding-right: 1rem;
+  padding-left: 15rem;
+}
+
+.slider__btn {
+  width: 80px;
+  height: auto;
+  padding: 1.6rem;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #dddddd;
+}
+.slider__btn img {
+  width: 100%;
+  height: 100%;
+}
+.slider__btn img:last-child {
+  display: none;
+}
+.slider__btn + .slider__btn {
+  margin-top: 1em;
+}
+.slider__btn:hover {
+  border: 2px solid #134880;
+}
+.slider__btn:hover img:first-child {
+  display: none;
+}
+.slider__btn:hover img:last-child {
+  display: inline-block;
+}
+
+.slider__txt {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 5em;
+}
+.slider__txt h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1em;
+  color: #1e598e;
+  margin-bottom: 2rem;
+}
+.slider__txt p {
+  font-size: 1.75rem;
+  line-height: 1.2em;
+}
+
+/*# sourceMappingURL=main.css.map */
